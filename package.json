@@ -1,0 +1,19 @@
+{
+  "name": "discord-musicbot",
+  "version": "1.0.0",
+  "description": "Muscibot written in Javascrip using DiscordJS and discord-player",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Johannes Böhmer",
+  "license": "",
+  "dependencies": {
+    "discord-player": "^6.2.1",
+    "discord.js": "^14.1.2",
+    "ffmpeg-static": "^5.0.2",
+    "ms": "^3.0.0-canary.1",
+    "opusscript": "^0.0.8",
+    "ytdl-core": "4.9.1"
+  }
+}
