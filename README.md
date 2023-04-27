@@ -16,13 +16,13 @@ To run this bot, you need to have Node.js and npm installed on your system. You 
 
 Clone this repository and install the dependencies with:
 
-```
+```bash
 $ git clone https://github.com/your-username/discord-musicbot.git
 $ cd discord-musicbot
 $ npm i
 ```
 Next, rename the config.example.js file to config.js and fill in your bot token and other options.
-```
+```js
 module.exports = {
     // Discord Bot-token
     token: '<Token>',
@@ -50,7 +50,7 @@ module.exports = {
 
 Start the bot with:
 
-```
+```bash
 $ npm run start
 ```
 Invite the bot to a server and run `/help` to get more info on how to use the bot.
