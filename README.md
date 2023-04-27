@@ -17,8 +17,8 @@ To run this bot, you need to have Node.js and npm installed on your system. You 
 Clone this repository and install the dependencies with:
 
 ```bash
-$ git clone https://github.com/your-username/discord-musicbot.git
-$ cd discord-musicbot
+$ git clone https://github.com/Jojo10011/genisys_musicbot.git
+$ cd genisys_musicbot
 $ npm i
 ```
 Next, rename the config.example.js file to config.js and fill in your bot token and other options.
