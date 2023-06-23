@@ -55,12 +55,6 @@ $ npm run start
 ```
 Invite the bot to a server and run `/help` to get more info on how to use the bot.
 
-## Bugs
-
-Currently because of a bug this project uses ytdl-core@4.9.1 instead of latest.
-
-This is intentional and will be changed once it is fixed by ytdl.
-
 ## License
 
 This repository is licensed under an MIT License
