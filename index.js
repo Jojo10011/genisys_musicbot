@@ -20,6 +20,9 @@ client.config = require('./config')
 // Create a new player instance
 global.player = new Player(client, client.config.discordPlayer)
 
+// Load all default extractors
+player.extractors.loadDefault()
+
 // Create a new collection for commands
 client.commands = new Collection()
 array = []
