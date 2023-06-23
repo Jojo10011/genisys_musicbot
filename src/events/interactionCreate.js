@@ -38,8 +38,8 @@ module.exports = (client, inter) => {
     const buttonFile = customId.ffb
     const queue = player.nodes.get(inter.guildId)
     if (buttonFile) {
-      delete require.cache[require.resolve(`../src/buttons/${buttonFile}.js`)]
-      const button = require(`../src/buttons/${buttonFile}.js`)
+      delete require.cache[require.resolve(`../buttons/${buttonFile}.js`)]
+      const button = require(`../buttons/${buttonFile}.js`)
       if (button) return button({ client, inter, customId, queue })
     }
   }
