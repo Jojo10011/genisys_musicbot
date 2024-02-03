@@ -7,11 +7,21 @@ module.exports = async ({ inter, queue }) => {
   // get repeat mode
   const repeatMode = queue.repeatMode
   // set repeat mode to track
-  if (repeatMode === 0) queue.setRepeatMode(QueueRepeatMode.TRACK)
+  if (repeatMode === 0) {
+    queue.setRepeatMode(QueueRepeatMode.TRACK)
+    // Reply to interaction
+    return inter.reply({ content: `Loop Modus: **Track** 🔁` })
+  }
   // set repeat mode to queue
-  if (repeatMode === 1) queue.setRepeatMode(QueueRepeatMode.QUEUE)
+  if (repeatMode === 1) {
+    queue.setRepeatMode(QueueRepeatMode.QUEUE)
+    // Reply to interaction  
+    return inter.reply({ content: `Loop Modus: **Queue** 🔁` })
+  }
   // set repeat mode to disabled
-  if (repeatMode === 2) queue.setRepeatMode(QueueRepeatMode.OFF)
-  // Reply to interaction
-  return inter.reply({ content: `Loop Modus: **${methods[queue.repeatMode]}** 🔁` })
+  if (repeatMode === 2) {
+    queue.setRepeatMode(QueueRepeatMode.OFF)
+    // Reply to interaction
+    return inter.reply({ content: `Loop Modus: **Off** 🔁` })
+  }
 }
