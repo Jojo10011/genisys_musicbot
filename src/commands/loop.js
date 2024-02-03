@@ -31,20 +31,20 @@ module.exports = {
         // set loop mode to queue
         queue.setRepeatMode(QueueRepeatMode.QUEUE)
 
-        return inter.reply({ content: `Loop Modus: **${methods[queue.repeatMode]}** 🔁` })
+        return inter.reply({ content: `Loop Modus: **Queue** 🔁` })
       }
       case 'disable_loop': {
         // set loop mode to off
         queue.setRepeatMode(QueueRepeatMode.OFF)
 
-        return inter.reply({ content: `Loop Modus: **${methods[queue.repeatMode]}** 🔁` })
+        return inter.reply({ content: `Loop Modus: **Off** 🔁` })
       }
       case 'enable_loop_song': {
         if (queue.repeatMode === 2) return inter.reply({ content: `Du Musst zuerst den Loop Modus ausschalten (/loop Disable) ${inter.member} ❌`, ephemeral: true })
         // set loop mode to song
         queue.setRepeatMode(QueueRepeatMode.TRACK)
 
-        return inter.reply({ content: `Loop Modus: **${methods[queue.repeatMode]}** 🔁` })
+        return inter.reply({ content: `Loop Modus: **Track** 🔁` })
       }
     }
   }
